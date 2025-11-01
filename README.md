@@ -1,10 +1,10 @@
-<<<<<<< HEAD
 # 🚀 MyApi – API RESTful en .NET 8 con Clean Architecture
 
 ![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-Developer-blue?logo=csharp)
 ![Clean Architecture](https://img.shields.io/badge/Architecture-Clean-brightgreen)
 ![SQL Server](https://img.shields.io/badge/Database-SQL%20Server-red?logo=microsoftsqlserver)
+![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue?logo=postgresql)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
