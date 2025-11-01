@@ -12,20 +12,20 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Persistence.SqlServer.Repositories
 {
-    public class ModenaRepository : IModenaRepository
+    public class MonedaRepository : IModenaRepository
     {
         private readonly SqlServerConnectionFactory _sqlServerFactory;
-        private readonly ILogger<ModenaRepository> _logger;
+        private readonly ILogger<MonedaRepository> _logger;
 
-        public ModenaRepository(SqlServerConnectionFactory sqlServerFactory, ILogger<ModenaRepository> logger)
+        public MonedaRepository(SqlServerConnectionFactory sqlServerFactory, ILogger<MonedaRepository> logger)
         {
             _sqlServerFactory = sqlServerFactory;
             _logger = logger;
         }
 
-        public async Task<IEnumerable<Modeda>> GetModenaAsync()
+        public async Task<IEnumerable<Moneda>> GetModenaAsync()
         {
-            var lista = new List<Modeda>();
+            var lista = new List<Moneda>();
 
             try
             {
@@ -39,7 +39,7 @@ namespace Infrastructure.Persistence.SqlServer.Repositories
 
                 while (await reader.ReadAsync())
                 {
-                    lista.Add(new Modeda
+                    lista.Add(new Moneda
                     {
                         CodMoneda = reader["CodMoneda"]?.ToString() ?? string.Empty,
                         AbvMoneda = reader["AbvMoneda"]?.ToString() ?? string.Empty,

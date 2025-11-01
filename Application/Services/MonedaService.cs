@@ -21,7 +21,7 @@ namespace Application.Services
             _logger = logger;
         }
 
-        public Task<IEnumerable<Modeda>> ObtenerMonedaAsync()
+        public Task<IEnumerable<Moneda>> ObtenerMonedaAsync()
         {
             _logger.LogInformation("Ejecutando caso de uso: Obtener unidades de medida");
 

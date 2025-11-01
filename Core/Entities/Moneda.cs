@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core.Entities
 {
-    public class Modeda
+    public class Moneda
     {
         public string CodMoneda { get; set; } = default!;
         public string AbvMoneda { get; set; } = default!;

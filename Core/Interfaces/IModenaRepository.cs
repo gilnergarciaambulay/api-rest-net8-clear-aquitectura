@@ -9,6 +9,6 @@ namespace Core.Interfaces
 {
     public interface IModenaRepository
     {
-        Task<IEnumerable<Modeda>> GetModenaAsync();
+        Task<IEnumerable<Moneda>> GetModenaAsync();
     }
 }

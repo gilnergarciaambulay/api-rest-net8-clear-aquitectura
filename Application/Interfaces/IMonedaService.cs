@@ -10,6 +10,6 @@ namespace Application.Interfaces
 {
     public interface IMonedaService
     {
-        Task<IEnumerable<Modeda>> ObtenerMonedaAsync();
+        Task<IEnumerable<Moneda>> ObtenerMonedaAsync();
     }
 }

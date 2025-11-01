@@ -10,9 +10,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//
-builder.Services.AddApplication();
-builder.Services.AddInfrastructure(builder.Configuration);
+//Inyeccion de dependencias
+builder.Services.AddApplication();//Llamado a la capa Application
+builder.Services.AddInfrastructure(builder.Configuration);//Llamado a la capa Infrastructure
 
 var app = builder.Build();
 
